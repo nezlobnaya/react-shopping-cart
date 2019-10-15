@@ -3,7 +3,7 @@ import {CartContext} from '../contexts/CartContext';
 // Components
 import Item from './ShoppingCartItem';
 
-const ShoppingCart = (props) => {
+const ShoppingCart = () => {
 	const {cart, deleteItem} = useContext(CartContext);
 	const getCartTotal = () => {
 		return cart.reduce((acc, value) => {
