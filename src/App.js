@@ -19,11 +19,12 @@ function App() {
 	};
 
 	const deleteItem = itemId => {
-		const newCart = cart.filter(
-		  item => item.id !== itemId
-		);
-		return setCart([...newCart]);
-	  };
+		setCart(cart.filter(item => item.id !== itemId))}
+	// 	const newCart = cart.filter(
+	// 	  item => item.id !== itemId
+	// 	);
+	// 	return setCart([...newCart]);
+	//   };
 	  
 
 	return (
